@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For My Neenumma ❤️</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ffb6d9,#ffe8f3,#fff);display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{display:none;max-width:850px;margin:20px;padding:35px;border-radius:24px;background:rgba(255,255,255,.28);backdrop-filter:blur(16px);box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.active{display:block}.btns{text-align:center;margin-top:25px}button{padding:12px 24px;border:none;border-radius:20px;background:#ff4f95;color:#fff;cursor:pointer}
+h1{text-align:center;color:#d81b60}p{line-height:1.8;font-size:18px;color:#444}
+</style></head><body>
+<div class="card active">
+<h1>🥺 I'm Sorry, My Neenumma ❤️</h1>
+<p>Hi Neenumma... Every word on this page comes from my heart. Ever since our argument, my mind has been replaying every moment again and again. I keep wondering why I couldn't stay calm and why I allowed my emotions to speak louder than my heart. I know my words became harsh, and I know they hurt you. That thought has stayed with me ever since. I never wanted to become the reason for your sadness. If I could go back to that moment, I would choose patience instead of anger and understanding instead of arguments. I would rather spend hours talking peacefully than spend a few minutes hurting someone who means so much to me. I know a simple apology cannot erase pain, but I hope you can feel the sincerity behind every sentence. I truly regret the way I handled everything and I wish I had shown more kindness and maturity. You deserve respect, care, and gentle words, and I am sorry for failing to give that in that moment. I hope one day you can remember that my mistake came from uncontrolled emotions, not from a lack of care. 🌸💖</p>
+<div class='btns'><button onclick='next()'>Next ➜</button></div></div>
+
+<div class="card">
+<h1>💌 What I Couldn't Say 💌</h1>
+<p>There is something I wanted to explain but never managed to say properly. When the promise was broken, I felt hurt deep inside. Maybe it was only my overthinking, maybe I misunderstood the situation, but for a moment I felt unimportant and that feeling stayed in my heart. Instead of calmly sharing that feeling with you, I argued and let frustration take over. Looking back now, I realize that I should have trusted our conversation instead of my fears. I should have listened more and spoken less. I never wanted to win an argument. I only wanted to feel understood and valued. If my words made your heart heavy, I regret them deeply. I know both people can feel hurt in a misunderstanding, and I am taking responsibility for the way I reacted. I hope that with time you can see that behind those angry words was someone who cared deeply but did not know how to express those emotions in the right way. ❤️🥹🌹</p>
+<div class='btns'><button onclick='prev()'>⬅ Previous</button> <button onclick='next()'>Next ➜</button></div></div>
+
+<div class="card">
+<h1>🌹 One Last Thing 🌹</h1>
+<p>Thank you for taking the time to read this. I know forgiveness cannot be forced and I know healing takes time. I am not asking you to forget everything overnight or pretend nothing happened. I only hope that when your heart feels ready, you can forgive me and allow this memory to become a lesson instead of a wall between us. I miss your smile, your messages, and the comfort of talking without misunderstandings. I want to become someone who communicates with patience and respect even when emotions are strong. No matter what happens, I will always wish happiness and peace for you. I hope that one day we can look back on this as a moment that helped us understand each other better. Until then, I just want you to know that I am truly sorry and that my apology comes from the deepest part of my heart. Please take care of yourself, Neenumma. 💖✨🥺</p>
+<div class='btns'><button onclick='prev()'>⬅ Previous</button></div></div>
+<script>
+let i=0,c=document.querySelectorAll('.card');
+function show(){c.forEach(x=>x.classList.remove('active'));c[i].classList.add('active');}
+function next(){if(i<c.length-1){i++;show();}}
+function prev(){if(i>0){i--;show();}}
+</script>
+</body></html>
